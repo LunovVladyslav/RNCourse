@@ -2,17 +2,18 @@ import { Button, StyleSheet, Text, TextInput, View } from 'react-native';
 
 export default function App() {
 
-  
+
   return (
-    
+
     <View style={styles.container}>
       <View style={styles.inputContainer}>
-        <TextInput placeholder='Your course goal!' style={styles.textInput}/>
+        <TextInput placeholder='Your course goal!' style={styles.textInput} />
         <Button title='Add Goal' />
       </View>
       <View>
         <Text>List of Goals...</Text>
-        </View>
+        <Text>Hello World!</Text>
+      </View>
     </View>
   );
 }
