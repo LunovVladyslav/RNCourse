@@ -12,6 +12,7 @@ export default function App() {
       </View>
       <View>
         <Text>List of Goals...</Text>
+        <Text>List of Balls...</Text>
       </View>
     </View>
   );
