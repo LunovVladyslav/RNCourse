@@ -12,8 +12,6 @@ export default function App() {
       </View>
       <View>
         <Text>List of Goals...</Text>
-        <Text>Hello World!</Text>
-        <Text>New Sync test!</Text>
       </View>
     </View>
   );
