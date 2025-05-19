@@ -1,6 +1,7 @@
 import { Alert, StyleSheet, TextInput, View } from "react-native";
-import PrimaryButton from "../components/PrimaryButton";
+import PrimaryButton from "../components/ui/PrimaryButton";
 import { useState } from "react";
+import Colors from "../constants/colors";
 
 const StartGameScreen = (props) => {
     const [enteredNumber, setEnteredNumber] = useState('');
@@ -43,7 +44,7 @@ const StartGameScreen = (props) => {
                 value={enteredNumber}
                 onChangeText={numberInputHandler}
                 placeholder="00"
-                placeholderTextColor="#DDB42F5A"
+                placeholderTextColor={Colors.accent700}
             />
             <View style={styles.buttonsContainer}>
                 <View style={styles.buttonContainer}>
@@ -65,11 +66,11 @@ const styles = StyleSheet.create({
         marginHorizontal: 24,
         borderRadius: 8,
         padding: 16,
-        backgroundColor: "#430524FF",
+        backgroundColor: Colors.primary800,
 
         elevation: 4, // for Android
 
-        shadowColor: 'black', // for iOS
+        shadowColor: Colors.black, // for iOS
         shadowOffset: { width: 0, height: 2 }, // for iOS
         shadowRadius: 6, // for iOS
         shadowOpacity: 0.25, // for iOS
@@ -77,9 +78,9 @@ const styles = StyleSheet.create({
     numberInput: {
         width: 50,
         fontSize: 32,
-        borderBottomColor: '#ddb52f',
+        borderBottomColor: Colors.accent500,
         borderBottomWidth: 2,
-        color: '#ddb52f',
+        color: Colors.accent500,
         marginVertical: 8,
         fontWeight: 'bold',
         textAlign: 'center',

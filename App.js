@@ -5,6 +5,7 @@ import { StatusBar } from 'expo-status-bar';
 import StartGameScreen from './screens/StartGameScreen';
 import GameScreen from './screens/GameScreen';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import Colors from './constants/colors';
 
 export default function App() {
 
@@ -22,7 +23,7 @@ export default function App() {
   return (
     <>
       <StatusBar style="light" />
-      <LinearGradient colors={['#3F0321FF', '#ddb52f']} style={styles.rootScreen}>
+      <LinearGradient colors={[Colors.primary800, Colors.accent500]} style={styles.rootScreen}>
         <ImageBackground
           source={require('./assets/images/background.png')}
           resizeMode="cover"
