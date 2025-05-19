@@ -27,8 +27,8 @@ const StartGameScreen = (props) => {
                 ]);
             return;
         }
-        // props.onPickNumber(chosenNumber);
-        console.log('Valid number: ', chosenNumber);
+        props.onPickNumber(chosenNumber);
+        // console.log('Valid number: ', chosenNumber);
 
     }
 

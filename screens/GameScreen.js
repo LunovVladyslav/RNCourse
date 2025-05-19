@@ -1,6 +1,6 @@
 import { Text, View } from "react-native";
 
-const GameScreen = () => {
+const GameScreen = (props) => {
     return (
         <View>
             <Text>Game Screen</Text>
